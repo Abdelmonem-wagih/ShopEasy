@@ -1,26 +1,76 @@
-<h1 align="center">Hi 👋, I'm Abdelmonem Wagih</h1>
-<h3 align="center">Flutter developer from Egypt</h3>
+<div align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Abdelmonem+Wagih!+😎;" />
+</div>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=abdelmonem-wagih&label=Profile%20views&color=0e75b6&style=flat" alt="abdelmonem-wagih" /> </p>
+<br>
 
-- 🔭 I’m currently working on [Wrd App](https://github.com/Abdelmonem-wagih/Wrd)
+## 🙋‍♂️ About Me:
 
-- 👯 I’m looking to collaborate on [ShopEasy](https://github.com/Abdelmonem-wagih/ShopEasy)
+- 🔭 I’m currently working as a **Software Engineer 💻** | **Mobile Application Developer 📱** .
 
-- 👨‍💻 All of my projects are available at [https://github.com/Abdelmonem-wagih](https://github.com/Abdelmonem-wagih)
+- 🌱 I’m currently learning **Advanced Flutter**.
 
-- 📫 How to reach me **abdowagih38@gmail.com**
+- 👨‍💻 All of my projects are available at **[My Repository](https://github.com/Abdelmonem-wagih?tab=repositories)**.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/abdelmoem wagih" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abdelmoem wagih" height="30" width="40" /></a>
+<br>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+<br>
+
+## 🚀 Languages and Tools:
+<div align="center">
+    <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,cpp,java" />
+    <img src="https://skillicons.dev/icons?i=github,androidstudio,vscode,figma,postman" /><br>
+</div>
+
+<br>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+<br>
+
+## 📊 My Stats:
+
+<p align="center">
+    <a href="https://github.com/Abdelmonem-wagih/github-readme-streak-stats">
+        <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Abdelmonem-wagih's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Abdelmonem-wagih&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"/>
+    </a>
 </p>
+<a href="https://github.com/Abdelmonem-wagih/github-readme-stats"><img alt="Abdelmonem-wagih's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Abdelmonem-wagih&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
+<a href="https://github.com/Abdelmonem-wagih/github-readme-stats"><img alt="Abdelmonem-wagih's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdelmonem-wagih&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://hive.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg" alt="hive" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> </p>
+<br>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+<br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=abdelmonem-wagih&show_icons=true&locale=en&layout=compact" alt="abdelmonem-wagih" /></p>
+## 🤝 Connect With Me:
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abdelmonem-wagih&show_icons=true&locale=en" alt="abdelmonem-wagih" /></p>
+<div align="center">
+    <a href="https://www.linkedin.com/in/abdelmoem-wagih-0301ba197/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
+    </a>
+  <a href="mailto:abdowagih38@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
+     </a>
+</div>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abdelmonem-wagih&" alt="abdelmonem-wagih" /></p>
+<br>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+<br>
+
+## 💜 Views and Followers:
+
+<a href="https://github.com/Abdelmonem-wagih/github-profile-views-counter">
+    <img src="https://komarev.com/ghpvc/?username=Abdelmonem-wagih">
+</a>
+<a href="https://github.com/Abdelmonem-wagih?tab=followers"><img src="https://img.shields.io/github/followers/Abdelmonem-wagih?label=Followers&style=social" alt="GitHub Badge"></a>
+<h3 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=25&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+❤️;+Shoot+me+a+message+on+Linkedin!;I'm+Long+Life+Learner">
+</h3>
+
+<br/>
