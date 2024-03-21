@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552712818556",
+    "project_id": "ultra-bearing-402000",
+    "storage_bucket": "ultra-bearing-402000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552712818556:android:aced6cea57e42e02d59ef9",
+        "android_client_info": {
+          "package_name": "com.example.shopease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDmHp4H9lkOVOoVwh3-ml6ouflDPextb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
