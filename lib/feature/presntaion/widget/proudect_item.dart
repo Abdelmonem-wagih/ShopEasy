@@ -1,14 +1,13 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shopease/feature/domain/entities/product.dart';
-import 'package:shopease/feature/presntaion/cubit/favorite/favorite_cubit.dart';
+import 'package:shopease/feature/presntaion/commponent/cart.dart';
 import 'package:shopease/feature/presntaion/cubit/increase_badge/increase_badge_cubit.dart';
-import 'package:shopease/feature/presntaion/screens/product_detail_screen.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({super.key, required this.product});
 
-  final Product product;
+  final QueryDocumentSnapshot product;
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +18,17 @@ class ProductItem extends StatelessWidget {
           subtitle: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('\$ ${product.price!}'),
+              Text('\$ ${product['price']!}'),
               IconButton(
                 icon: const Icon(Icons.shopping_cart_outlined),
                 onPressed: () {
                   context.read<IncreaseBadgeCubit>().incrementBadge();
+                  context.read<CartCubit>().addItem(
+                        price: double.parse(product['price']),
+                        title: product['title'],
+                        productId: product.id,
+                        imageUrl: product['image'],
+                      );
                 },
                 color: Colors.white70,
               ),
@@ -31,20 +36,13 @@ class ProductItem extends StatelessWidget {
           ),
           backgroundColor: Colors.black87,
           title: Text(
-            product.category!,
+            product['title'],
             textAlign: TextAlign.center,
           ),
         ),
-        child: GestureDetector(
-          onTap: () => Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => ProductDetailScreen(
-              product: product,
-            ),
-          )),
-          child: Image.network(
-            product.image!,
-            fit: BoxFit.contain,
-          ),
+        child: Image.network(
+          product['image'],
+          fit: BoxFit.contain,
         ),
       ),
     );

@@ -1,10 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:shopease/feature/domain/entities/product.dart';
 
 import 'proudect_item.dart';
 
 class ProviderGrid extends StatelessWidget {
-  final List<Product> product;
+  final List<QueryDocumentSnapshot> product;
   const ProviderGrid(this.product, {super.key});
   @override
   Widget build(BuildContext context) {

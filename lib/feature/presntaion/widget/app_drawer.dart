@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shopease/feature/presntaion/screens/manage_product_screen.dart';
+import 'package:shopease/feature/presntaion/screens/orders.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -17,15 +19,28 @@ class AppDrawer extends StatelessWidget {
             onTap: () => Navigator.of(context).pushReplacementNamed("/"),
           ),
           const Divider(),
-          const ListTile(
+           ListTile(
             leading: Icon(Icons.payment),
             title: Text("Orders"),
+            onTap: () => Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                      builder: (context) => OrderScreen(),
+                    ),
+                    (route) => false,
+                  )
+            //OrderScreen
           ),
           const Divider(),
-          const ListTile(
-            leading: Icon(Icons.edit),
-            title: Text("Manage Product"),
-          ),
+          ListTile(
+              leading: Icon(Icons.edit),
+              title: Text("Manage Product"),
+              onTap: () => Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                      builder: (context) => ManageProductScreen(),
+                    ),
+                    (route) => false,
+                  )
+              ),
         ],
       ),
     );

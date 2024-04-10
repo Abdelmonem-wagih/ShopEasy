@@ -5,71 +5,103 @@ class CartItem {
   final String title;
   final int quantity;
   final double price;
+  final String imageUrl;
 
   CartItem({
     required this.id,
     required this.title,
     required this.quantity,
     required this.price,
+    required this.imageUrl,
   });
+
+
 }
 
-class CartCubit extends Cubit<List<CartItem>> {
-  CartCubit() : super([]);
+class CartCubit extends Cubit<Map<String, CartItem>> {
+  CartCubit() : super({});
 
-  void addItem(String productId, double price, String title) {
-    final cartItemIndex =
-        state.indexWhere((item) => item.id == productId);
-
-    if (cartItemIndex >= 0) {
-      final List<CartItem> updatedCart = List.from(state);
-      updatedCart[cartItemIndex] = CartItem(
-        id: state[cartItemIndex].id,
-        title: state[cartItemIndex].title,
-        quantity: state[cartItemIndex].quantity + 1,
-        price: state[cartItemIndex].price,
-      );
-      emit(updatedCart);
+  void addItem({
+    required String productId,
+    required double price,
+    required String title,
+    required String imageUrl,
+  }) {
+    if (state.containsKey(productId)) {
+      // If the product already exists in the cart, update its quantity
+      emit({
+        ...state,
+        productId: CartItem(
+          id: productId,
+          title: title,
+          quantity: state[productId]!.quantity + 1,
+          price: price,
+          imageUrl: imageUrl,
+        ),
+      });
     } else {
-      final List<CartItem> updatedCart = List.from(state);
-      updatedCart.add(
-        CartItem(
+      // If the product does not exist in the cart, add it
+      emit({
+        ...state,
+        productId: CartItem(
           id: productId,
           title: title,
           quantity: 1,
           price: price,
+          imageUrl: imageUrl,
         ),
-      );
-      emit(updatedCart);
+      });
     }
   }
 
   void removeItem(String productId) {
-    final List<CartItem> updatedCart =
-        List.from(state.where((item) => item.id != productId));
-    emit(updatedCart);
+    if (state.containsKey(productId)) {
+      // Remove the product from the cart
+      Map<String, CartItem> updatedCart = Map.from(state);
+      updatedCart.remove(productId);
+      emit(updatedCart);
+    }
+  }
+
+  void addSingleItem(String productId) {
+    if (state.containsKey(productId)) {
+      // Increase the quantity of the product in the cart by 1
+      emit({
+        ...state,
+        productId: CartItem(
+          id: productId,
+          title: state[productId]!.title,
+          quantity: state[productId]!.quantity + 1,
+          price: state[productId]!.price,
+          imageUrl: state[productId]!.imageUrl,
+        ),
+      });
+    }
   }
 
   void removeSingleItem(String productId) {
-    final cartItemIndex =
-        state.indexWhere((item) => item.id == productId);
-
-    if (cartItemIndex >= 0 && state[cartItemIndex].quantity > 1) {
-      final List<CartItem> updatedCart = List.from(state);
-      updatedCart[cartItemIndex] = CartItem(
-        id: state[cartItemIndex].id,
-        title: state[cartItemIndex].title,
-        quantity: state[cartItemIndex].quantity - 1,
-        price: state[cartItemIndex].price,
-      );
-      emit(updatedCart);
-    } else {
-      removeItem(productId);
+    if (state.containsKey(productId)) {
+      if (state[productId]!.quantity > 1) {
+        // Decrease the quantity of the product in the cart by 1
+        emit({
+          ...state,
+          productId: CartItem(
+            id: productId,
+            title: state[productId]!.title,
+            quantity: state[productId]!.quantity - 1,
+            price: state[productId]!.price,
+            imageUrl: state[productId]!.imageUrl,
+          ),
+        });
+      } else {
+        // If the quantity is 1, remove the product from the cart
+        removeItem(productId);
+      }
     }
   }
 
   void clear() {
-    emit([]);
+    emit({});
   }
 
   int get itemCount {
@@ -77,8 +109,8 @@ class CartCubit extends Cubit<List<CartItem>> {
   }
 
   double get totalAmount {
-    var total = 0.0;
-    state.forEach((cartItem) {
+    double total = 0.0;
+    state.forEach((productId, cartItem) {
       total += cartItem.price * cartItem.quantity;
     });
     return total;

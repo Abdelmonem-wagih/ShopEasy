@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 
 
-class FavoriteCubit extends Cubit<bool> {
-  FavoriteCubit() : super(false);
+class ExpendCubit extends Cubit<bool> {
+  ExpendCubit() : super(false);
 
   void toggleFavorite() {
     emit(!state);
